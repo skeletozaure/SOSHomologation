@@ -586,6 +586,356 @@ img {
     font-weight: 600;
 }
 
+/* Guarantees Section */
+.guarantees {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.guarantees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.guarantee-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    border: 2px solid var(--color-gray-200);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.guarantee-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--mc-color-racing-red);
+}
+
+.guarantee-card.highlight {
+    border-color: var(--mc-color-racing-red);
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f5 100%);
+}
+
+.guarantee-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--mc-color-racing-red), #ff6b6b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.guarantee-icon i {
+    font-size: 1.8rem;
+    color: var(--color-white);
+}
+
+.guarantee-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    color: var(--color-navy);
+    margin-bottom: 0.5rem;
+}
+
+.guarantee-stat {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--mc-color-racing-red);
+    margin: 0.5rem 0;
+    line-height: 1;
+}
+
+.guarantee-card p {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+}
+
+.guarantee-card strong {
+    color: var(--color-navy);
+    font-weight: 600;
+}
+
+.guarantee-card .small-text {
+    font-size: 0.9rem;
+    color: var(--color-gray-500);
+    margin-top: 0.5rem;
+}
+
+.badge-quality {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #3C3B6E, #4a4a8a);
+    color: var(--color-white);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-md);
+    margin-top: 1rem;
+}
+
+.badge-quality i {
+    font-size: 1.5rem;
+    color: var(--mc-color-gold);
+}
+
+.badge-quality span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Insurance Partner */
+.insurance-partner {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+    border: 2px solid #3C3B6E;
+}
+
+.partner-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-gray-200);
+}
+
+.partner-header i {
+    font-size: 2rem;
+    color: var(--mc-color-racing-red);
+}
+
+.partner-header h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-navy);
+    margin: 0;
+}
+
+.insurance-partner > p {
+    color: var(--color-gray-600);
+    margin-bottom: 1.5rem;
+}
+
+.partner-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+}
+
+.partner-logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003781;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+.partner-details {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.partner-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-navy);
+    margin: 0;
+}
+
+.partner-address,
+.partner-phone {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+    color: var(--color-gray-600);
+    line-height: 1.5;
+}
+
+.partner-address i,
+.partner-phone i {
+    color: var(--mc-color-racing-red);
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.partner-phone a {
+    color: var(--color-navy);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.partner-phone a:hover {
+    color: var(--mc-color-racing-red);
+}
+
+/* Vehicles Examples Section */
+.vehicles-examples {
+    background: linear-gradient(135deg, #0d0f12 0%, #1a1d23 100%);
+    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.vehicles-examples::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(255, 255, 255, 0.03) 2px,
+            rgba(255, 255, 255, 0.03) 4px
+        );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.vehicles-examples .container {
+    position: relative;
+    z-index: 2;
+}
+
+.vehicles-examples .section-heading h2,
+.vehicles-examples .section-heading .eyebrow {
+    color: var(--color-white);
+}
+
+.vehicles-examples .section-intro {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.vehicles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.vehicle-category {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 2px solid rgba(201, 42, 42, 0.3);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.vehicle-category:hover {
+    transform: translateY(-4px);
+    border-color: var(--mc-color-racing-red);
+    background: linear-gradient(135deg, rgba(201, 42, 42, 0.1) 0%, rgba(201, 42, 42, 0.05) 100%);
+    box-shadow: 0 8px 32px rgba(201, 42, 42, 0.3);
+}
+
+.category-icon {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, var(--mc-color-racing-red), #ff6b6b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(201, 42, 42, 0.4);
+}
+
+.category-icon i {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.vehicle-category h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.vehicle-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.vehicle-list li {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vehicle-list li:last-child {
+    border-bottom: none;
+}
+
+.vehicle-list i {
+    color: var(--mc-color-racing-red);
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.vehicles-note {
+    display: flex;
+    align-items: start;
+    gap: 1.25rem;
+    background: linear-gradient(135deg, rgba(60, 59, 110, 0.3) 0%, rgba(60, 59, 110, 0.15) 100%);
+    border: 2px solid #3C3B6E;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.vehicles-note i {
+    font-size: 1.8rem;
+    color: #3C3B6E;
+    background: var(--color-white);
+    border-radius: 50%;
+    padding: 0.75rem;
+    flex-shrink: 0;
+}
+
+.vehicles-note p {
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.vehicles-note strong {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
 .atelier {
     background: var(--color-white);
 }
@@ -656,6 +1006,310 @@ img {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.16em;
+}
+
+/* Pricing Section */
+.pricing {
+    background: var(--color-white);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.pricing-card {
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--mc-color-racing-red);
+    box-shadow: 0 8px 24px rgba(201, 42, 42, 0.15);
+}
+
+.pricing-card.featured {
+    border-color: var(--mc-color-racing-red);
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    position: relative;
+}
+
+.pricing-card.featured::before {
+    content: 'POPULAIRE';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--mc-color-racing-red);
+    color: var(--color-white);
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.pricing-card.special {
+    border-color: var(--mc-color-gold);
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+}
+
+.pricing-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--mc-color-racing-red), #ff6b6b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card.special .pricing-icon {
+    background: linear-gradient(135deg, var(--mc-color-gold), #f4c430);
+}
+
+.pricing-icon i {
+    font-size: 1.8rem;
+    color: var(--color-white);
+}
+
+.pricing-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-navy);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.pricing-subtitle {
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
+    margin: 0;
+}
+
+.pricing-value {
+    font-size: 1rem;
+    color: var(--color-gray-600);
+    margin: 0;
+}
+
+.pricing-value strong {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: var(--mc-color-racing-red);
+    margin-top: 0.25rem;
+}
+
+.pricing-card.special .pricing-value strong {
+    color: var(--mc-color-gold);
+}
+
+/* Pricing Extras */
+.pricing-extras {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-extras > h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    color: var(--color-navy);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.pricing-extras > h3 i {
+    color: var(--mc-color-racing-red);
+}
+
+.extras-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.extra-item {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    border: 1px solid var(--color-gray-200);
+}
+
+.extra-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.extra-header i {
+    font-size: 1.3rem;
+    color: var(--mc-color-racing-red);
+}
+
+.extra-header h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-navy);
+    margin: 0;
+}
+
+.extra-item p {
+    color: var(--color-gray-600);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.extra-prices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.extra-price {
+    color: var(--color-gray-600);
+    font-size: 0.95rem;
+}
+
+.extra-price strong {
+    color: var(--mc-color-racing-red);
+    font-weight: 600;
+}
+
+.gps-list {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.gps-list li {
+    color: var(--color-gray-600);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.gps-list li:last-child {
+    border-bottom: none;
+}
+
+.gps-list strong {
+    color: var(--mc-color-racing-red);
+    font-weight: 600;
+    float: right;
+}
+
+/* Pricing Alert */
+.pricing-alert {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border: 2px solid #ffc107;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.alert-icon {
+    flex-shrink: 0;
+}
+
+.alert-icon i {
+    font-size: 1.8rem;
+    color: #ff9800;
+}
+
+.alert-content h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #e65100;
+    margin: 0 0 0.5rem 0;
+}
+
+.alert-content p {
+    color: #6d4c41;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Pricing Footer */
+.pricing-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.pricing-note {
+    background: var(--color-white);
+    border: 2px solid #3C3B6E;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.pricing-note > i {
+    font-size: 1.8rem;
+    color: #3C3B6E;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.pricing-note h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-navy);
+    margin: 0 0 1rem 0;
+}
+
+.pricing-note ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.pricing-note li {
+    color: var(--color-gray-600);
+    line-height: 1.5;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pricing-note li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--mc-color-racing-red);
+    font-weight: bold;
+}
+
+.btn-large {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
 }
 
 .testimonials {
@@ -946,6 +1600,16 @@ textarea {
         justify-content: center;
         text-align: center;
     }
+
+    .partner-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .partner-logo {
+        padding: 1rem;
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 720px) {
@@ -980,6 +1644,72 @@ textarea {
 
     .brand-text .brand-sos { font-size: 1.05rem; }
     .brand-text .brand-homologation { font-size: 0.85rem; }
+
+    .guarantees-grid {
+        gap: 1.5rem;
+    }
+
+    .guarantee-card {
+        padding: 1.5rem;
+    }
+
+    .insurance-partner {
+        padding: 1.5rem;
+    }
+
+    .badge-quality {
+        padding: 0.75rem 1rem;
+    }
+
+    .vehicles-grid {
+        gap: 1.5rem;
+    }
+
+    .vehicle-category {
+        padding: 1.5rem;
+    }
+
+    .vehicles-note {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .vehicles-note i {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .pricing-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .pricing-extras {
+        padding: 1.5rem;
+    }
+
+    .extras-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-alert {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    .pricing-note {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .pricing-footer {
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 540px) {
