@@ -8,16 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script defer src="https://kit.fontawesome.com/9c9b6d1fdc.js" crossorigin="anonymous"></script>
     <script defer src="assets/js/main.js"></script>
 </head>
 <body>
     <header class="site-header" id="accueil">
         <div class="container header-inner">
             <a href="#accueil" class="brand" aria-label="SOS Homologation">
-                <span class="brand-icon" aria-hidden="true">🚗</span>
-                <span class="brand-text">SOS Homologation</span>
+                <img class="brand-icon" src="assets/img/chally.png" alt="logo" aria-hidden="true" />
+                <span class="brand-text">
+                    <span class="brand-sos">SOS</span>
+                    <span class="brand-sep">&nbsp;</span>
+                    <span class="brand-homologation">HOMOLOGATION</span>
+                </span>
             </a>
             <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
                 <span class="sr-only">Menu</span>
@@ -79,32 +83,81 @@
                 </div>
                 <div class="service-grid">
                     <article class="service-card">
-                        <div class="service-icon"><i class="fas fa-file-signature" aria-hidden="true"></i></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4" />
+                                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                        <path d="m3 15 2 2 4-4" />
+                            </svg>
+                        </div>
                         <h3>Homologation complète</h3>
                         <p>Constitution du dossier DREAL, passage UTAC, contrôle technique, plaques conformes et livraison d'une voiture prête à immatriculer.</p>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon"><i class="fas fa-warehouse" aria-hidden="true"></i></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M3 21V8.5L12 3l9 5.5V21" />
+                                        <path d="M9 9v12" />
+                                        <path d="M15 9v12" />
+                                        <path d="M3 15h18" />
+                            </svg>
+                        </div>
                         <h3>Mise en conformité</h3>
                         <p>Adaptation des optiques, feux, ceintures et systèmes électroniques pour répondre aux normes françaises et européennes.</p>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon"><i class="fas fa-shipping-fast" aria-hidden="true"></i></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                                        <path d="M15 18H9" />
+                                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                                        <circle cx="17" cy="18" r="2" />
+                                        <circle cx="7" cy="18" r="2" />
+                            </svg>
+                        </div>
                         <h3>Import & logistique</h3>
                         <p>Organisation du transport, passage en douane, dédouanement et livraison dans nos ateliers ou directement chez vous.</p>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 20v2" />
+                                        <path d="M12 2v2" />
+                                        <path d="M17 20v2" />
+                                        <path d="M17 2v2" />
+                                        <path d="M2 12h2" />
+                                        <path d="M2 17h2" />
+                                        <path d="M2 7h2" />
+                                        <path d="M20 12h2" />
+                                        <path d="M20 17h2" />
+                                        <path d="M20 7h2" />
+                                        <path d="M7 20v2" />
+                                        <path d="M7 2v2" />
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                        <rect x="8" y="8" width="8" height="8" rx="1" />
+                            </svg>
+                        </div>
                         <h3>Reprogrammation moteur</h3>
                         <p>Cartographies sur mesure, optimisation flexfuel et préparation pour vos véhicules américains récents ou vintage.</p>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.11-3.11c.31-.32.85-.21.97.21a6 6 0 0 1-8.26 7.06l-7.91 7.91a1 1 0 0 1-3-3l7.91-7.91a6 6 0 0 1 7.06-8.26c.42.12.53.66.22.98Z" />
+                            </svg>
+                        </div>
                         <h3>Atelier mécanique</h3>
                         <p>Entretien, upgrades performance, réparations lourdes et suivi personnalisé par des techniciens passionnés.</p>
                     </article>
                     <article class="service-card">
-                        <div class="service-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73Z" />
+                                        <path d="M12 22V12" />
+                                        <path d="M3.29 7 12 12l8.71-5" />
+                                        <path d="m7.5 4.27 9 5.15" />
+                            </svg>
+                        </div>
                         <h3>Pièces & accessoires</h3>
                         <p>Large stock de pièces OEM et performance, sourcing express depuis les États-Unis et conseil d'experts.</p>
                     </article>
@@ -156,29 +209,55 @@
         <section class="section process" id="process">
             <div class="container">
                 <div class="section-heading">
-                    <p class="eyebrow">Notre méthode</p>
+                    <p class="eyebrow">Homologation</p>
                     <h2>Un process clair pour mettre votre voiture sur la route</h2>
+                    <p class="section-intro">
+                        Que vous soyez professionnel ou particulier, nous pouvons nous charger de l'homologation de votre véhicule. Une procédure parfois complexe liée à l'administration — nous effectuons toutes ces démarches ainsi que les transformations nécessaires sur le véhicule.
+                    </p>
                 </div>
                 <div class="timeline">
                     <div class="timeline-step">
                         <span class="timeline-number">01</span>
                         <h3>Audit & devis</h3>
-                        <p>Analyse de votre véhicule, étude des modifications à prévoir et estimation précise des délais et coûts.</p>
+                        <p>Vérification de l'état de fonctionnement des organes principaux du véhicule. Analyse complète et préparation du dossier pour garantir une procédure fluide.</p>
                     </div>
                     <div class="timeline-step">
                         <span class="timeline-number">02</span>
-                        <h3>Mise en conformité</h3>
-                        <p>Travaux atelier, sourcing des pièces, réglages électroniques et préparation aux contrôles officiels.</p>
+                        <h3>Transformations</h3>
+                        <p>Transformations électriques, gravure du châssis, adaptation des équipements et mise aux normes françaises et européennes.</p>
                     </div>
                     <div class="timeline-step">
                         <span class="timeline-number">03</span>
-                        <h3>Tests & homologation</h3>
-                        <p>Gestion des rendez-vous UTAC, DREAL et contrôle technique jusqu'à réception de l'attestation.</p>
+                        <h3>Contrôles officiels</h3>
+                        <p>Présentation aux divers contrôles (UTAC, DREAL, contrôle technique) jusqu'à réception de l'attestation d'homologation.</p>
                     </div>
                     <div class="timeline-step">
                         <span class="timeline-number">04</span>
-                        <h3>Livraison & suivi</h3>
-                        <p>Restitution de votre voiture prête à immatriculer, assistance pour la carte grise et services après-vente.</p>
+                        <h3>Immatriculation</h3>
+                        <p>Restitution de votre voiture prête à immatriculer, assistance pour les démarches ANTS (carte grise sous ~2 mois) et services après-vente.</p>
+                    </div>
+                </div>
+                <div class="process-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div>
+                            <h3>Localisation</h3>
+                            <p><strong>ZI Les Sauvaires, 13590 Meyreuil</strong><br>Nous intervenons partout en France</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <div>
+                            <h3>Délais</h3>
+                            <p><strong>15 à 25 jours</strong> d'immobilisation du véhicule lorsque le dossier est complet</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        <div>
+                            <h3>Immatriculation</h3>
+                            <p>Délai global d'environ <strong>2 mois</strong> pour l'obtention de la carte grise définitive</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,7 +342,8 @@
                     <h2>Prêt à homologuer ou préparer votre voiture importée ?</h2>
                     <p>Expliquez-nous votre projet, nous vous répondons sous 48h avec une feuille de route détaillée.</p>
                 </div>
-                <a class="btn btn-primary" href="#contact">Contactez-nous</a>
+                <a class="btn btn-primary" href="#
+                t">Contactez-nous</a>
             </div>
         </section>
 
@@ -276,15 +356,27 @@
                         SOS Homologation – Import, homologation, atelier mécanique et vente de pièces pour véhicules américains.
                     </p>
                     <ul class="contact-list">
-                        <li><i class="fas fa-phone"></i> <a href="tel:+33600000000">+33 6 00 00 00 00</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+33661332328">06 61 33 23 28</a></li>
                         <li><i class="fas fa-envelope"></i> <a href="mailto:contact@soshomologation.com">contact@soshomologation.com</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> France &amp; Europe – Démarches d'homologation à distance</li>
+                        <li><i class="fas fa-map-marker-alt"></i> ZI Les Sauvaires, 13590 Meyreuil</li>
                         <li><i class="fas fa-clock"></i> Du lundi au samedi – 9h à 19h</li>
                     </ul>
                     <div class="social-links" aria-label="Réseaux sociaux">
-                        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/john.car.180" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/soshomologation/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@JohnV8usa" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.456789!2d5.4973069!3d43.4679814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9917c123346f5%3A0x1399ed488649ccd2!2sSos%20Homologation!5e0!3m2!1sfr!2sfr!4v1733508000000!5m2!1sfr!2sfr"
+                            width="100%" 
+                            height="280" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="SOS Homologation - ZI Les Sauvaires, 13590 Meyreuil">
+                        </iframe>
                     </div>
                 </div>
                 <form class="contact-form" action="https://formspree.io/f/xbjwgvve" method="POST">
@@ -324,8 +416,12 @@
     <footer class="site-footer">
         <div class="container footer-inner">
             <div class="footer-brand">
-                <span class="brand-icon" aria-hidden="true">🚗</span>
-                <span class="brand-text">SOS Homologation</span>
+                <img class="brand-icon" src="assets/img/chally.png" alt="logo" aria-hidden="true" />
+                <span class="brand-text">
+                    <span class="brand-sos">SOS</span>
+                    <span class="brand-sep">&nbsp;</span>
+                    <span class="brand-homologation">HOMOLOGATION</span>
+                </span>
             </div>
             <p>© <span id="current-year"></span> SOS Homologation. Tous droits réservés.</p>
             <div class="footer-links">
